@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "main.py",
+      "src": "app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
+      "dest": "app.py"
     }
   ],
   "env": {
-    "GEMINI_API_KEY": "@gemini_api_key",
+    "GOOGLE_API_KEY": "@google_api_key",
     "OPENAI_API_KEY": "@openai_api_key",
     "ANTHROPIC_API_KEY": "@anthropic_api_key",
     "DEEPSEEK_API_KEY": "@deepseek_api_key"

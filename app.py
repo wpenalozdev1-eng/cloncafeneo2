@@ -74,6 +74,7 @@ def ui():
         const history = document.getElementById('history');
         const message = document.getElementById('message');
         const send = document.getElementById('send');
+        const conversation = [];
 
         function appendBubble(text, origin){
           const div = document.createElement('div');
@@ -85,26 +86,34 @@ def ui():
 
         async function sendMessage(){
           const text = message.value.trim();
-          if(!text)return;
+          if(!text) return;
+
           appendBubble('Tú: ' + text, 'user');
+          conversation.push({role:'user', content:text});
           message.value='';
           send.disabled=true;
           appendBubble('Cargando...', 'bot');
+
           try {
             const res = await fetch('/chat', {
               method:'POST',
               headers:{'Content-Type':'application/json'},
-              body: JSON.stringify({pregunta:text})
+              body: JSON.stringify({pregunta:text, historial:conversation})
             });
             const data = await res.json();
-            history.lastChild.textContent = 'Bot: ' + (data.respuesta||'No hay respuesta');
+            const botText = 'Bot: ' + (data.respuesta || 'No hay respuesta');
+            history.lastChild.textContent = botText;
+            conversation.push({role:'assistant', content:data.respuesta || ''});
           } catch(e){
             history.lastChild.textContent = 'Bot: Error de conexión';
-          } finally{ send.disabled=false; message.focus(); }
+          } finally {
+            send.disabled=false;
+            message.focus();
+          }
         }
 
         send.addEventListener('click', sendMessage);
-        message.addEventListener('keydown', e=>{ if(e.key==='Enter') sendMessage(); });
+        message.addEventListener('keydown', e => { if(e.key==='Enter') sendMessage(); });
       </script>
     </body>
     </html>

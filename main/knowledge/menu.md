@@ -29,10 +29,11 @@ MENÚ Y PRECIOS:
 - Guatemala Antigua: notas a cacao, manzana, canela y frutas secas.
 
 ## Combos recomendados
-- Combo Cítrico: Cold Brew + Tarta de limón.
-- Combo Frutal: Cafe filtrado de Etiopía + Cheesecake de frutos rojos.
-- Combo Clásico: Espresso + Brownie de chocolate.
-- Combo Ligero: Latte + Galletas de avena y arándanos.
+- Combo Cítrico: Cold Brew + Tarta de limón. $7.50
+- Combo Frutal: Cafe filtrado de Etiopía + Cheesecake de frutos rojos. $8.00
+- Combo Clásico: Espresso + Brownie de chocolate. $6.00
+- Combo Ligero: Latte + Galletas de avena y arándanos. $5.00
+- Combo Mañanero: Café Americano + Galleta de avena. $3.00
 
 ## Referencias de ingredientes de postres
 - Torta de limón: harina, mantequilla, azúcar, huevo, limón, nata.
