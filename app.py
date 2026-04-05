@@ -24,6 +24,9 @@ except Exception as e:
     raise
 
 app = FastAPI(title="API Cafetería Selecto Granos")
+@app.get("/")
+def root():
+    return {"status": "ok"}
 
 # Habilitar CORS
 app.add_middleware(
