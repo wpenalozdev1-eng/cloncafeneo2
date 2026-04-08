@@ -3,12 +3,12 @@
 ## Cafés Calientes
 
 ### Espresso
-- **Precio**: $2.50
+- **Precio**: $2.00
 - **Descripción**: Shot doble de espresso con granos selectos.
 - **Recomendación**: Base para otras bebidas.
 
 ### Americano
-- **Precio**: $3.00
+- **Precio**: $2.50
 - **Descripción**: Espresso diluido con agua caliente.
 - **Recomendación**: Para quienes prefieren café negro ligero.
 
