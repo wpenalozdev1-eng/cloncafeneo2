@@ -1,10 +1,6 @@
 ---
 name: backend-fastapi-neocafe
-description: >
-Use this skill when creating or modifying FastAPI endpoints,
-services, or AI adapters for the NeoCafeIA chatbot project
-using hexagonal architecture, factory pattern, and Gemini or
-multi-provider AI integrations.
+description: Use this skill when creating or modifying FastAPI endpoints, services, or AI adapters for the NeoCafeIA chatbot project using hexagonal architecture, factory pattern, and Gemini or multi-provider AI integrations.
 compatibility:
   - Python 3.12+
   - FastAPI
